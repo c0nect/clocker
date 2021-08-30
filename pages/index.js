@@ -2,7 +2,10 @@ import Head from 'next/head'
 
 const Logo = () => {
   return (
-    <img src="/logo.svg" alt="logotipo" width={200} className="p-2 inline-block" />
+    <>
+      <img src="/logo.svg" alt="logotipo" width={200} className="p-2 inline-block" />
+      <h1 className="text-black p-5 normal-case font-semibold" >Create your own schedule, for free</h1>
+    </>
   )
 }
 
@@ -41,8 +44,8 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* my components */}
       <Logo />
-      <p className="text-black p-5 normal-case font-semibold" >Create your own schedule, for free</p>
       <Form />
     </div>
   )
