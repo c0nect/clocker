@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <>
       <img src="/logo.svg" alt="logotipo" width={200} className="p-2 inline-block" />
-      <h1 className="text-black p-5 normal-case font-semibold" >Create your own schedule, for free</h1>
+      <h1 className="text-black p-5 normal-case font-semibold">Create your own schedule, for free</h1>
     </>
   )
 }
@@ -18,9 +18,9 @@ const Form = () => {
           <input type="email" id="email" placeholder="E-mail" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
         </div>
 
-        <div className="mb-4">
+        <div className="mb-1" >
           <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">Password</label>
-          <input type="password" id="password" placeholder="******************" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" />
+          <input type="password" id="password" placeholder="**********" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" />
         </div>
 
         <div className="mb-6">
@@ -29,9 +29,23 @@ const Form = () => {
         </div>
 
         <div className="flex items-center justify-between">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Join</button>
+          <button className="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
         </div>
       </form>
+    </div>
+  )
+}
+
+const Footer = () => {
+  return (
+    <div className="container fixed bottom-0 mx-auto px-6">
+        <div className="border-t-2 border-gray-300 flex flex-col items-center">
+            <div className="sm:w-2/3 text-center py-5">
+                <p className="text-sm text-gray-700 font-normal mb-2">
+                  © 2021 | made with ❤️ by <a href="http://github.com/c0nect" target="_blank" className="font-bold">c0nect</a>  
+                </p>
+            </div>
+        </div>
     </div>
   )
 }
@@ -47,6 +61,7 @@ const Home = () => {
       {/* my components */}
       <Logo />
       <Form />
+      <Footer />
     </div>
   )
 }
